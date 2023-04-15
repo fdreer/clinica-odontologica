@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Clinica Odontologica</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <a href="./turnoAlta.html">Agregar nuevo</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <h1>Turnos:</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">FECHA</th>
+            <th scope="col">HORA</th>
+            <th scope="col">ODONTOLOGO</th>
+            <th scope="col">PACIENTE</th>
+            <th scope="col">MODIFICAR</th>
+            <th scope="col">ELIMINAR</th>
+          </tr>
+        </thead>
+
+        <tbody id="lista-turnos"></tbody>
+        <tfoot id="table-foot"></tfoot>
+      </table>
+    </main>
+    <script src="./src/js/components/turno/getTurnos.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </body>
+</html>

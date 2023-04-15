@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Clinica Odontologica</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/pacienteList.html">Administracion Pacientes</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Alta de Pacientes</h2>
+      <form>
+        <section style="display: flex">
+          <article>
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Ingrese nombre"
+              required
+            />
+
+            <label for="apellido">Apellido:</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Ingrese apellido"
+              required
+            />
+
+            <label for="dni">DNI:</label>
+            <input
+              type="text"
+              name="dni"
+              id="dni"
+              placeholder="Ingrese dni"
+              required
+            />
+          </article>
+
+          <article>
+            <label for="calle">Calle:</label>
+            <input
+              type="text"
+              name="calle"
+              id="calle"
+              placeholder="Ingrese calle"
+              required
+            />
+
+            <label for="numero">Numero:</label>
+            <input
+              type="number"
+              name="numero"
+              id="numero"
+              placeholder="Ingrese numero"
+              required
+            />
+
+            <label for="localidad">Localidad:</label>
+            <input
+              type="text"
+              name="localidad"
+              id="localidad"
+              placeholder="Ingrese localidad"
+              required
+            />
+
+            <label for="provincia">Provincia:</label>
+            <input
+              type="text"
+              name="provincia"
+              id="provincia"
+              placeholder="Ingrese provincia"
+              required
+            />
+          </article>
+        </section>
+
+        <button type="submit">Dar de Alta</button>
+      </form>
+    </main>
+
+    <script
+      type="module"
+      src="./src/js/components/paciente/postPaciente.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </body>
+</html>
